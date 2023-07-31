@@ -44,8 +44,8 @@ if you download this folder in d drive and its path look like this D:\password_m
 - Copy path of both file
 - Goto to each file and replace value of md_file_path and lg_path_data variable as shown below :
 ``` python
-md_file_path =  Here  # "Enter path of main_data" 
-lp_file_path =  Here  #"Enter path of login_password"
+lp_file_path =    #"Enter path of login_password"
 ```
+- And replace these two lines with two variables written in almost every file
 
 
