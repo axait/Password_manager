@@ -27,6 +27,12 @@ This tool is written in ptyhon and support gui mode.
 To install it you have python 3 in your system
 
 ```bash
+git clone https://github.com/hysus-th/Password_manager
+```
+```bash
+cd Password_manager
+```
+```bash
 python main.py
 ```
 ##  > Note
