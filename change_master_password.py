@@ -2,11 +2,12 @@
 from tkinter import *
 from tkinter import messagebox
 
+from file_path import md_file_path,lp_file_path
 
 # -------------------------------------FUNCTIONS-OF-GUI-----------------------------------------#
 def check_old_password_func(old_password_to_check)  -> bool:
     from data_encryptor import encrypt_data , decrypt_data
-    with open('./database/login_password') as login_password_file :
+    with open(lp_file_path) as login_password_file :
         real_login_password = decrypt_data(login_password_file.read())
     if old_password_to_check == real_login_password :
         return True
@@ -28,7 +29,7 @@ def write_new_password(new_password) :
         result_save_new_password_question = messagebox.askquestion("Save Password", f"Do you want to save new password?\nNew password: {new_password}")
         if result_save_new_password_question == "yes":
             try :
-                with open('./database/login_password' , "w+t") as login_password_file :
+                with open(lp_file_path , "w+t") as login_password_file :
                     login_password_file.write(encrypt_data(new_password))
                 error_label = Label(root, text='New Password Saved Successfully' , fg='green' )
                 error_label.place( x=18 , y=370 , width=335  ,height=40)

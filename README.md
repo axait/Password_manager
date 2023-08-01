@@ -18,7 +18,7 @@ This tool is written in ptyhon and support gui mode.
 
 ## Tech
 
-> This tool is written in python 3
+> This tool is written in **python 3**
 
 
 
@@ -26,27 +26,28 @@ This tool is written in ptyhon and support gui mode.
 
 To install it you have python 3 in your system
 
-```ssh
+```bash
 python main.py
 ```
 ##  > Note
 > Default master password in blank
-> After downloading this repo you need to set path of databese in all files
+> After downloading this repo you need to set path of **"password_manager"** folder in **file_path.py** in **"project_path" variable**
 
 ## Setup
 
 ```ssh
-if you download this folder in d drive and its path look like this D:\password_manager then you don't need to follow setup steps just install and run main.py
+if you download this folder in d drive and its path look like this "D:\password_manager" then you don't need to follow setup steps just install and run main.py
 ```
 
 # - Steps
-- goto to database folder inside password manager
-- Copy path of both file
-- Goto to each file and replace value of md_file_path and lg_path_data variable as shown below :
+- Copy path of password_manager folder
+- Open **file_path.py** and change Value of **variable project_path** as shown below :
 ``` python
-md_file_path =    # "Enter path of main_data" 
-lp_file_path =    #"Enter path of login_password"
+project = "WRITE PATH OF PASSWORD_MANAGER FOLDER INSIDE THESE DOUBLE QUOTATION"
 ```
-- And replace these two lines with two variables written in almost every file
+- And replace THIS line with **First line** written in **file_path.py** inside **"password_manager"** folder
 
+``` python
+project_path = "D:\\Password_manager"
+```
 

@@ -4,8 +4,7 @@
 # with open(json_file_path) as file:
 #     data = json.load(file)
 
-md_file_path = "D:\\Password_manager\\database\\main_data" 
-lp_file_path = "D:\\Password_manager\\database\\login_password"
+from file_path import md_file_path,lp_file_path
 
 # -------------------------------------IMPORT-LIBRARIES-----------------------------------------#
 from tkinter import *
